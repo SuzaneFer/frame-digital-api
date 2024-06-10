@@ -3,7 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "frame-digital-api", "frame-digital-api\frame-digital-api.csproj", "{E97D5703-0EE3-4132-BC56-5BB31D785478}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameDigitalApi", "FrameDigitalApi\FrameDigitalApi.csproj", "{E97D5703-0EE3-4132-BC56-5BB31D785478}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{DF0CFD87-0357-4F4E-9604-93D26C2693EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{D7B22688-BEFA-48F6-A21A-4364EEC4BF82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{65A0ED9F-E070-4B80-8488-00B9281FBF44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F9EC01B2-CC28-4E55-AF15-0A38416CF19F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Injection", "Injection", "{60744C3B-CEFD-40EC-9A27-070926770A99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameDigitalApi.Dto", "FrameDigitalApi.Dto\FrameDigitalApi.Dto.csproj", "{1F9495B3-C0C1-46BE-9E90-CDB0BD68C2C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameDigitalApi.Entity", "FrameDigitalApi.Entity\FrameDigitalApi.Entity.csproj", "{422705AE-D6A2-4BFE-A4B7-ACA8AE5939CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameDigitalApi.Business.Interface", "FrameDigitalApi.Business.Interface\FrameDigitalApi.Business.Interface.csproj", "{AC327856-76C3-482C-AECD-DD33DF7D9E4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameDigitalApi.Injection", "FrameDigitalApi.Injection\FrameDigitalApi.Injection.csproj", "{7C48BDD0-5343-4D3A-9110-1E8BBEE30152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameDigitalApi.Repository.Interface", "FrameDigitalApi.Repository.Interface\FrameDigitalApi.Repository.Interface.csproj", "{54FFD701-99EF-499E-8248-6EABF5A5A358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameDigitalApi.Repository", "FrameDigitalApi.Repository\FrameDigitalApi.Repository.csproj", "{5BFC9204-654F-4752-9498-6E59A77E19A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameDigitalApi.Test", "FrameDigitalApi.Test\FrameDigitalApi.Test.csproj", "{FEC71650-3894-41CA-A63E-E26DA88D1315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameDigitalApi.Business", "FrameDigitalApi.Business\FrameDigitalApi.Business.csproj", "{40BB86E6-EA2E-474D-BA34-E5B70F6594B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +41,51 @@ Global
 		{E97D5703-0EE3-4132-BC56-5BB31D785478}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E97D5703-0EE3-4132-BC56-5BB31D785478}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E97D5703-0EE3-4132-BC56-5BB31D785478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F9495B3-C0C1-46BE-9E90-CDB0BD68C2C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9495B3-C0C1-46BE-9E90-CDB0BD68C2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9495B3-C0C1-46BE-9E90-CDB0BD68C2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9495B3-C0C1-46BE-9E90-CDB0BD68C2C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422705AE-D6A2-4BFE-A4B7-ACA8AE5939CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422705AE-D6A2-4BFE-A4B7-ACA8AE5939CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422705AE-D6A2-4BFE-A4B7-ACA8AE5939CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422705AE-D6A2-4BFE-A4B7-ACA8AE5939CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC327856-76C3-482C-AECD-DD33DF7D9E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC327856-76C3-482C-AECD-DD33DF7D9E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC327856-76C3-482C-AECD-DD33DF7D9E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC327856-76C3-482C-AECD-DD33DF7D9E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C48BDD0-5343-4D3A-9110-1E8BBEE30152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C48BDD0-5343-4D3A-9110-1E8BBEE30152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C48BDD0-5343-4D3A-9110-1E8BBEE30152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C48BDD0-5343-4D3A-9110-1E8BBEE30152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54FFD701-99EF-499E-8248-6EABF5A5A358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FFD701-99EF-499E-8248-6EABF5A5A358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FFD701-99EF-499E-8248-6EABF5A5A358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FFD701-99EF-499E-8248-6EABF5A5A358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BFC9204-654F-4752-9498-6E59A77E19A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFC9204-654F-4752-9498-6E59A77E19A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFC9204-654F-4752-9498-6E59A77E19A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFC9204-654F-4752-9498-6E59A77E19A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEC71650-3894-41CA-A63E-E26DA88D1315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC71650-3894-41CA-A63E-E26DA88D1315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC71650-3894-41CA-A63E-E26DA88D1315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC71650-3894-41CA-A63E-E26DA88D1315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40BB86E6-EA2E-474D-BA34-E5B70F6594B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40BB86E6-EA2E-474D-BA34-E5B70F6594B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40BB86E6-EA2E-474D-BA34-E5B70F6594B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40BB86E6-EA2E-474D-BA34-E5B70F6594B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F9495B3-C0C1-46BE-9E90-CDB0BD68C2C3} = {F9EC01B2-CC28-4E55-AF15-0A38416CF19F}
+		{422705AE-D6A2-4BFE-A4B7-ACA8AE5939CF} = {F9EC01B2-CC28-4E55-AF15-0A38416CF19F}
+		{AC327856-76C3-482C-AECD-DD33DF7D9E4A} = {60744C3B-CEFD-40EC-9A27-070926770A99}
+		{7C48BDD0-5343-4D3A-9110-1E8BBEE30152} = {60744C3B-CEFD-40EC-9A27-070926770A99}
+		{54FFD701-99EF-499E-8248-6EABF5A5A358} = {60744C3B-CEFD-40EC-9A27-070926770A99}
+		{5BFC9204-654F-4752-9498-6E59A77E19A4} = {D7B22688-BEFA-48F6-A21A-4364EEC4BF82}
+		{FEC71650-3894-41CA-A63E-E26DA88D1315} = {65A0ED9F-E070-4B80-8488-00B9281FBF44}
+		{40BB86E6-EA2E-474D-BA34-E5B70F6594B2} = {DF0CFD87-0357-4F4E-9604-93D26C2693EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8C83CE77-15F2-4D84-B014-E65DE6753EF8}
