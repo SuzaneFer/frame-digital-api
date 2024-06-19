@@ -1,24 +1,27 @@
 using FrameDigitalApi.Business.Interface;
+using FrameDigitalApi.Dto;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FrameDigitalApi.Controllers
+namespace FrameDigitalApi.Controllers;
+
+[ApiController]
+[Route("")]
+public class SampleController : ControllerBase
 {
-    [ApiController]
-    [Route("")]
-    public class SampleController : ControllerBase
+    private readonly ISampleBusiness _business;
+
+    public SampleController(ISampleBusiness business)
     {
-        private readonly ISampleBusiness _business;
+        _business = business;
+    }
 
-        public SampleController(ISampleBusiness business)
-        {
-            _business = business;
-        }
-
-        [HttpGet]
-        public IActionResult Get()
-        {
-            var dto = _business.GetSample();
-            return Ok(dto);
-        }
+    [HttpPost]
+    [Route("teste")]
+    [ProducesResponseType(200, Type = typeof(SampleDto))]
+    [ProducesResponseType(404)]
+    public IActionResult Get()
+    {
+        var dto = _business.GetSample();
+        return Ok(dto);
     }
 }

@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>FrameDigitalApi</RootNamespace>
     <RootNamespace>FrameDigitalApi</RootNamespace>
     <RuntimeIdentifiers>linux-x64</RuntimeIdentifiers>
     <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>
@@ -23,6 +22,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FrameDigitalApi.Business.Interface\FrameDigitalApi.Business.Interface.csproj" />
+    <ProjectReference Include="..\FrameDigitalApi.Business\FrameDigitalApi.Business.csproj" />
+    <ProjectReference Include="..\FrameDigitalApi.Repository\FrameDigitalApi.Repository.csproj" />
+	<ProjectReference Include="..\FrameDigitalApi.Injection\FrameDigitalApi.Injection.csproj" />
+
   </ItemGroup>
 
 </Project>

@@ -4,14 +4,13 @@ using FrameDigitalApi.Repository;
 using FrameDigitalApi.Repository.Interface;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace FrameDigitalApi.Injection
+namespace FrameDigitalApi.Injection;
+
+public static class Injection
 {
-    public static class Injection
+    public static void InjectDependencies(this IServiceCollection services)
     {
-        public static void InjectDependencies(this IServiceCollection services)
-        {
-            services.AddScoped<ISampleBusiness, SampleBusiness>();
-            services.AddScoped<ISampleRepository, SampleRepository>();
-        }
+        services.AddScoped<ISampleBusiness, SampleBusiness>();
+        services.AddScoped<ISampleRepository, SampleRepository>();
     }
 }

@@ -1,9 +1,8 @@
-﻿namespace FrameDigitalApi.Entity
-{
-    public class SampleEntity
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
+﻿namespace FrameDigitalApi.Entity;
 
-    }
+public class SampleEntity
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+
 }
